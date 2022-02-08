@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="3D.css">
+<link rel="stylesheet" href="accordion.css">
+
+</head>
+<body>
+
+<div class="header">
+ <nav>
+   
+   <ul class="menu">
+    <li><a href="contact.html">OUMAIMA <br>RAZZOUK</a></li>
+	
+       <li><a href="mon_premier_site.html">ACCUEIL</a></li>
+	   
+	   <li class="c"><a href="contact.html">CONTACTS</a></li>
+	</ul>
+	
+	</nav>
+	</div>
+<center>	
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2><b>Informations sur la licence fondamentale</b></h2>
+    </div>
+    <div class="flip-box-back">
+      <h2><button class="accordion">smia</button>
+<div class="content">
+  <a href="http://www.fsr.ac.ma/content/sciences-math%C3%A9matiques-et-applications">sma</a><br><br>
+ <a href="http://www.fsr.ac.ma/content/sciences-math%C3%A9matiques-et-informatique">smi</a>
+  </div>
+
+<button class="accordion">smpc</button>
+<div class="content">
+  <a href="http://www.fsr.ac.ma/content/sciences-de-la-mati%C3%A8re-physique">smp</a><br><br>
+  <a href="http://www.fsr.ac.ma/content/sciences-de-la-mati%C3%A8re-chimie">smc</a>
+  </div>
+
+<button class="accordion">svt</button>
+<div class="content">
+  <a href="http://www.fsr.ac.ma/content/sciences-de-la-terre-et-de-l%E2%80%99univers">stu</a><br><br>
+  <a href="http://www.fsr.ac.ma/content/sciences-de-la-vie-svi">svi</a>
+  </div>
+  </h2>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2><b>Les meilleurs sites de programmation pour débutants</b></h2>
+    </div>
+    <div class="flip-box-back">
+	<button class="accordion">coursera</button>
+<div class="content">
+  <a href="https://www.coursera.org/">https://www.coursera.org/</a>
+  </div>
+	<button class="accordion">w3schools</button>
+<div class="content">
+  <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>
+  </div>
+      <button class="accordion">codecademy</button>
+<div class="content">
+  <a href="https://www.codecademy.com/">https://www.codecademy.com/</a>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2><b>FSR</b></h2>
+    </div>
+    <div class="flip-box-back">
+	<button class="accordion">cliquer ici</button>
+<div class="content">
+  <a href="http://www.fsr.ac.ma/">http://www.fsr.ac.ma/</a>
+  </div>
+	
+    </div>
+  </div>
+</div>
+</center>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  }) ;
+}
+</script>
+<h1>Bonjour tout le monde ,j'espère que vous allez bien <br>
+et que mon premier site web vous plairas .</h1>
+<p>En effet,le but de ce site pour moi est de pratiquer ,tester et
+ savoir si j'ai bien pu comprendre les notions de base .<br>
+À travers ce site ,j'ai découvert beaucoup de chaines youtube
+ comme :<a href="https://www.youtube.com/c/LeDesignerduWeb/playlists" name="Le Designer du Web">Le Designer du Web</a> 
+et <a href="https://www.youtube.com/c/OnlineTutorials4Designers">Online Tutorials</a>
+et j'ai utilisé des sites aussi,comme suit:<a href="https://www.w3schools.com/">w3schools</a><br>
+Sans nier que mes professeurs
+ de ce module <b><u>Mr. El mamoun Souidi </u></b>et <u><b>Mr. Ahmed El yahyaoui</b></u>
+ ont un rôle très important et je les remercie énormément pour leurs efforts.</p>   
+
+<br>
+
+
+<center> <p class="ac">Vous visitez cette page depuis :<span id="i0"> </span></p></center>
+<script type='text/javascript'>
+var s=0;m=0;h=0;
+function change(){
+ document.getElementById('i0').textContent=h+ 'h' +m + ' mn '+' et '+s+' s ';
+     s++; 
+ if(s==60) {
+   s=0;m+=1
+}
+if(m==60){
+  m=0;h+=1;
+}
+}
+setInterval(change,1000);
+</script>
+
+</body>
+</html>
